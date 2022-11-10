@@ -206,7 +206,8 @@ class MainApplication(tk.Frame):
             return True
 
         return False
-
+    
+    #Function to select ACA file & populate TreeView
     def select_file(self) -> None:
         #Clear out any previous error labels
         self.promt_label.config(text = "")
@@ -265,7 +266,8 @@ class MainApplication(tk.Frame):
         self.pt_months.config(text = "Number of part-time months: " + str(num_ptmonths))
         
         return True
-
+    
+    #Function to search for an employee, set employee statistics, and set error label if not found
     def getSearch(self) -> None:
         #Return if company is none
         if self.company is None:
